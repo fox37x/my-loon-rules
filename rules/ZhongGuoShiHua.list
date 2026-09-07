@@ -1,0 +1,10 @@
+# NAME: ZhongGuoShiHua
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,sinopec-usa.com
+DOMAIN-SUFFIX,sinopec.com
+DOMAIN-SUFFIX,sinopecgroup.com
+DOMAIN-SUFFIX,sinopecnews.com.cn
+DOMAIN-SUFFIX,sinopecsales.com

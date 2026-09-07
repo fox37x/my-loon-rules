@@ -1,0 +1,9 @@
+# NAME: Fiio
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,fiio.cn
+DOMAIN-SUFFIX,fiio.com
+DOMAIN-SUFFIX,fiio.com.cn
+DOMAIN-SUFFIX,fiio.net

@@ -1,0 +1,12 @@
+# NAME: Asahi
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN,asahishimbun.sc.omtrdc.net
+DOMAIN-SUFFIX,aiasahi.jp
+DOMAIN-SUFFIX,asagaku.com
+DOMAIN-SUFFIX,asahi.com
+DOMAIN-SUFFIX,asahicom.jp
+DOMAIN-SUFFIX,asakonet.co.jp
+DOMAIN-SUFFIX,nikkansports.com

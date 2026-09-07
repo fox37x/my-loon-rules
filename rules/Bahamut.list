@@ -1,0 +1,13 @@
+# NAME: Bahamut
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 8
+#
+DOMAIN,bahamut.akamaized.net
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,viblast.com
+USER-AGENT,Anime*

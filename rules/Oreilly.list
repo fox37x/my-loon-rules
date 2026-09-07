@@ -1,0 +1,11 @@
+# NAME: Oreilly
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 6
+#
+DOMAIN-SUFFIX,oreil.ly
+DOMAIN-SUFFIX,oreilly.com
+DOMAIN-SUFFIX,oreilly.com.cn
+DOMAIN-SUFFIX,oreilly.review
+DOMAIN-SUFFIX,oreillystatic.com
+DOMAIN-SUFFIX,orl.ly

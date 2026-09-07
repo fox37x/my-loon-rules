@@ -1,0 +1,9 @@
+# NAME: Gog
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN,gog.salesmanago.com
+DOMAIN-SUFFIX,gog-statics.com
+DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog.qtlglb.com

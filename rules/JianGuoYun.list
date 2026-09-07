@@ -1,0 +1,10 @@
+# NAME: JianGuoYun
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,gdfgq.club
+DOMAIN-SUFFIX,jianguopuzi.com
+DOMAIN-SUFFIX,jianguoyun.com
+DOMAIN-SUFFIX,nutstore.net
+DOMAIN-SUFFIX,nutstorehq.com

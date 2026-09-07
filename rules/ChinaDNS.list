@@ -1,0 +1,9 @@
+# NAME: ChinaDNS
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,dns.alidns.com
+DOMAIN-SUFFIX,doh.360.cn
+DOMAIN-SUFFIX,doh.pub
+IP-CIDR,1.12.12.12/32,no-resolve

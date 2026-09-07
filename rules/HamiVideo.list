@@ -1,0 +1,9 @@
+# NAME: HamiVideo
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN,hls-hichannel.cdn.hinet.net
+DOMAIN-SUFFIX,hamivideo.hinet.net
+DOMAIN-SUFFIX,ott.hinet.net
+DOMAIN-KEYWORD,hamivideo.cdn.hinet.net

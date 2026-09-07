@@ -1,0 +1,15 @@
+# NAME: BaiFenDian
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 10
+#
+DOMAIN-SUFFIX,baifendian.com
+DOMAIN-SUFFIX,bfdcdn.com
+DOMAIN-SUFFIX,bfdcloud.com
+DOMAIN-SUFFIX,blingoffice.com
+DOMAIN-SUFFIX,marimall.cn
+DOMAIN-SUFFIX,mediaforce.cn
+DOMAIN-SUFFIX,pdeepmatrix.com
+DOMAIN-SUFFIX,percent.cn
+DOMAIN-SUFFIX,pertalk.cn
+DOMAIN-SUFFIX,xworld.net.cn

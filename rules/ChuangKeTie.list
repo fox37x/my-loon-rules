@@ -1,0 +1,10 @@
+# NAME: ChuangKeTie
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,byfan.cn
+DOMAIN-SUFFIX,chuangkit.com
+DOMAIN-SUFFIX,ckt.cn
+DOMAIN-SUFFIX,huoziyin.cn
+DOMAIN-SUFFIX,huoziyin.com

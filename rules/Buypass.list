@@ -1,0 +1,10 @@
+# NAME: Buypass
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,buypass-ssl.com
+DOMAIN-SUFFIX,buypass.com
+DOMAIN-SUFFIX,buypass.no
+DOMAIN-SUFFIX,buypass.se
+DOMAIN-SUFFIX,minid.no

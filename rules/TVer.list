@@ -1,0 +1,12 @@
+# NAME: TVer
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN-SUFFIX,dogatch.jp
+DOMAIN-SUFFIX,edge.api.brightcove.com
+DOMAIN-SUFFIX,gorin.jp
+DOMAIN-SUFFIX,screens-lab.jp
+DOMAIN-SUFFIX,tver.co.jp
+DOMAIN-SUFFIX,tver.jp
+USER-AGENT,TVer-Release*

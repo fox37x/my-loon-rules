@@ -1,0 +1,12 @@
+# NAME: ALJazeera
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN-SUFFIX,ajplus.net
+DOMAIN-SUFFIX,aljazeera.com
+DOMAIN-SUFFIX,aljazeera.net
+DOMAIN-SUFFIX,palestineremix.com
+DOMAIN-SUFFIX,sarajevopodopsadom.com
+DOMAIN-SUFFIX,srebrenica360.com
+DOMAIN-SUFFIX,syhacked.com

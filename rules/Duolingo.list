@@ -1,0 +1,7 @@
+# NAME: Duolingo
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,duolingo.cn
+DOMAIN-SUFFIX,duolingo.com

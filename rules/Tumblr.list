@@ -1,0 +1,8 @@
+# NAME: Tumblr
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,tmblr.co
+DOMAIN-SUFFIX,tumblr.co
+DOMAIN-SUFFIX,tumblr.com

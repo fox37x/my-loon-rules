@@ -1,0 +1,10 @@
+# NAME: 8btc
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,8btc.com
+DOMAIN-SUFFIX,bystack.com
+DOMAIN-SUFFIX,chainnode.com
+DOMAIN-SUFFIX,matpool.com
+DOMAIN-SUFFIX,matpool.net

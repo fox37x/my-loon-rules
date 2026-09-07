@@ -1,0 +1,11 @@
+# NAME: Akamai
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 6
+#
+DOMAIN-SUFFIX,akamai.com
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaistream.net
+DOMAIN-SUFFIX,akamaized.net

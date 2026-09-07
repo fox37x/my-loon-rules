@@ -1,0 +1,9 @@
+# NAME: MicrosoftEdge
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN,edge.activity.windows.com
+DOMAIN,edge.microsoft.com
+DOMAIN,iecvlist.microsoft.com
+DOMAIN,msedge.api.cdp.microsoft.com

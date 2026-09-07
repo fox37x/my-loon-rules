@@ -1,0 +1,9 @@
+# NAME: WenJuanXing
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,sojump.com
+DOMAIN-SUFFIX,wjx.cn
+DOMAIN-SUFFIX,wjx.com
+DOMAIN-SUFFIX,wjx.top

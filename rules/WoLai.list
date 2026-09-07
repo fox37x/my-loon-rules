@@ -1,0 +1,10 @@
+# NAME: WoLai
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,wol.tv
+DOMAIN-SUFFIX,wolai.com
+DOMAIN-SUFFIX,wolai.ren
+DOMAIN-SUFFIX,wostatic.cn
+DOMAIN-SUFFIX,woyun.work

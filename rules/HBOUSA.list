@@ -1,0 +1,16 @@
+# NAME: HBOUSA
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 11
+#
+DOMAIN,wmff.warnermediacdn.com
+DOMAIN-SUFFIX,cinemax.com
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,h264.io
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbomaxdash.s.llnwi.net
+DOMAIN-SUFFIX,hbonow.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,maxgo.com
+USER-AGENT,HBOMAX*

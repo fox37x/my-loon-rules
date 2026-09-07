@@ -1,0 +1,9 @@
+# NAME: ChengTongWangPan
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,ctfile.com
+DOMAIN-SUFFIX,ctfile.net
+DOMAIN-SUFFIX,n802.com
+DOMAIN-SUFFIX,tv002.com

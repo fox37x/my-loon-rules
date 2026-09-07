@@ -1,0 +1,8 @@
+# NAME: NaverTV
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,naver.com
+DOMAIN-SUFFIX,smartmediarep.com
+USER-AGENT,Naver%20TV*

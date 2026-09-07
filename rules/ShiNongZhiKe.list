@@ -1,0 +1,8 @@
+# NAME: ShiNongZhiKe
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,senseagro.cn
+DOMAIN-SUFFIX,senseagro.com
+DOMAIN-SUFFIX,senseagro.com.cn

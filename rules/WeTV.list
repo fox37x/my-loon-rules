@@ -1,0 +1,13 @@
+# NAME: WeTV
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 8
+#
+DOMAIN,wetv.qq.com
+DOMAIN-SUFFIX,iflix-images.akamaized.net
+DOMAIN-SUFFIX,iflix.com
+DOMAIN-SUFFIX,vv.video.qq.com
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+USER-AGENT,WeTV*
+IP-CIDR,150.109.28.51/32,no-resolve

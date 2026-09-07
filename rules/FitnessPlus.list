@@ -1,0 +1,7 @@
+# NAME: FitnessPlus
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN,amp-api.fitness.apple.com
+DOMAIN,hls-svod.itunes.apple.com

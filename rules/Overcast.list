@@ -1,0 +1,7 @@
+# NAME: Overcast
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,overcast.fm
+USER-AGENT,Overcast*

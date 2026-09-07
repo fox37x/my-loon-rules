@@ -1,0 +1,10 @@
+# NAME: Hpplay
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,hpplay.cn
+DOMAIN-SUFFIX,hpplay.com.cn
+DOMAIN-SUFFIX,mirrorcast.cn
+DOMAIN-SUFFIX,mirrorcast.com.cn
+DOMAIN-SUFFIX,mirrorcast.tv

@@ -1,0 +1,10 @@
+# NAME: Clubhouse
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN,clubhouse.pubnub.com
+DOMAIN,clubhouseprod.s3.amazonaws.com
+DOMAIN-SUFFIX,clubhouse.com
+DOMAIN-SUFFIX,clubhouseapi.com
+DOMAIN-SUFFIX,joinclubhouse.com

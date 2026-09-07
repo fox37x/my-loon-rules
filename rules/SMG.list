@@ -1,0 +1,9 @@
+# NAME: SMG
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,cptn.tv
+DOMAIN-SUFFIX,sava.sh.cn
+DOMAIN-SUFFIX,smg.cn
+DOMAIN-SUFFIX,smg.sh.cn

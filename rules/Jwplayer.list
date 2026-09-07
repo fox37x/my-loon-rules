@@ -1,0 +1,10 @@
+# NAME: Jwplayer
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,jwpcdn.com
+DOMAIN-SUFFIX,jwplatform.com
+DOMAIN-SUFFIX,jwplayer.com
+DOMAIN-SUFFIX,jwpltx.com
+DOMAIN-SUFFIX,jwpsrv.com

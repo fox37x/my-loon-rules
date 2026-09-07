@@ -1,0 +1,7 @@
+# NAME: AppLovin
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,applvn.com

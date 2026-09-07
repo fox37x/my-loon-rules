@@ -1,0 +1,8 @@
+# NAME: WildRift
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,pvp.net
+DOMAIN-SUFFIX,riotcdn.net
+DOMAIN-SUFFIX,riotgames.com

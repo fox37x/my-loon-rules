@@ -1,0 +1,8 @@
+# NAME: HKedcity
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,edcity.hk
+DOMAIN-SUFFIX,hkedcity.net
+DOMAIN-SUFFIX,hkreadingcity.net

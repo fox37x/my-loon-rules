@@ -1,0 +1,13 @@
+# NAME: HunanTV
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 8
+#
+DOMAIN-SUFFIX,hifuntv.com
+DOMAIN-SUFFIX,hitv.com
+DOMAIN-SUFFIX,hunaniptv.com
+DOMAIN-SUFFIX,hunantv.com
+DOMAIN-SUFFIX,imgo.tv
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,tazai.com
+USER-AGENT,MGTV*

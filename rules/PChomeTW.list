@@ -1,0 +1,10 @@
+# NAME: PChomeTW
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,ecapi-pchome.cdn.hinet.net
+DOMAIN-SUFFIX,ecimg.tw
+DOMAIN-SUFFIX,pchome.com.tw
+DOMAIN-SUFFIX,pchomepay.com.tw
+DOMAIN-SUFFIX,pcloud.tw

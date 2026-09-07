@@ -1,0 +1,11 @@
+# NAME: Gucci
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 6
+#
+DOMAIN-SUFFIX,chimeforchange.org
+DOMAIN-SUFFIX,gucci.cn
+DOMAIN-SUFFIX,gucci.com
+DOMAIN-SUFFIX,guccimuseo.com
+DOMAIN-SUFFIX,guccitimeless.com
+DOMAIN-SUFFIX,regiongold.com

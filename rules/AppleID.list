@@ -1,0 +1,9 @@
+# NAME: AppleID
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN,appleid.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,gsa.apple.com
+DOMAIN,idmsa.apple.com

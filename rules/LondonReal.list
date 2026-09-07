@@ -1,0 +1,7 @@
+# NAME: LondonReal
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,freedomplatform.tv
+DOMAIN-SUFFIX,londonreal.tv

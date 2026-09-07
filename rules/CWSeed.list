@@ -1,0 +1,10 @@
+# NAME: CWSeed
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN,cwtv-amd-akamai.akamaized.net
+DOMAIN,edge.cwtv-vod-ext.top.comcast.net
+DOMAIN-SUFFIX,cwseed.com
+DOMAIN-SUFFIX,cwtv.com
+DOMAIN-SUFFIX,thecwvideo.com

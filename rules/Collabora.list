@@ -1,0 +1,9 @@
+# NAME: Collabora
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,collabora.co.uk
+DOMAIN-SUFFIX,collabora.com
+DOMAIN-SUFFIX,collabora.org
+DOMAIN-SUFFIX,collaboraoffice.com

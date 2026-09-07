@@ -1,0 +1,9 @@
+# NAME: MOMOShop
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,momo.dm
+DOMAIN-SUFFIX,momo5188.com
+DOMAIN-SUFFIX,momomall.com.tw
+DOMAIN-SUFFIX,momoshop.com.tw

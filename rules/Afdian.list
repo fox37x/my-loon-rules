@@ -1,0 +1,7 @@
+# NAME: Afdian
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,afdian.net
+DOMAIN-SUFFIX,afdiancdn.com

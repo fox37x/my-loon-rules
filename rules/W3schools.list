@@ -1,0 +1,6 @@
+# NAME: W3schools
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 1
+#
+DOMAIN-SUFFIX,w3schools.com

@@ -1,0 +1,10 @@
+# NAME: JianShu
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,baijii.com
+DOMAIN-SUFFIX,jianshu.com
+DOMAIN-SUFFIX,jianshu.io
+DOMAIN-SUFFIX,jianshuapi.com
+DOMAIN-SUFFIX,shengmingfa.com

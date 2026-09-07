@@ -1,0 +1,8 @@
+# NAME: Purikonejp
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
+DOMAIN-SUFFIX,omotenashi.cygames.jp
+DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net

@@ -1,0 +1,7 @@
+# NAME: Gitee
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,gitee.io

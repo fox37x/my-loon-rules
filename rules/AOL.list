@@ -1,0 +1,9 @@
+# NAME: AOL
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,aol.ca
+DOMAIN-SUFFIX,aol.co.uk
+DOMAIN-SUFFIX,aol.com
+DOMAIN-SUFFIX,aolnews.com

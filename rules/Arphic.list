@@ -1,0 +1,9 @@
+# NAME: Arphic
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,arphic.com
+DOMAIN-SUFFIX,arphic.com.cn
+DOMAIN-SUFFIX,arphic.com.tw
+DOMAIN-SUFFIX,ifontcloud.com

@@ -1,0 +1,13 @@
+# NAME: Viki
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 8
+#
+DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
+DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
+DOMAIN-SUFFIX,twemoji.maxcdn.com
+DOMAIN-SUFFIX,viki.com
+DOMAIN-SUFFIX,viki.io
+DOMAIN-SUFFIX,viki.net
+DOMAIN-SUFFIX,vikidash.akamaized.net
+DOMAIN-SUFFIX,vikiplatform.com

@@ -1,0 +1,13 @@
+# NAME: Shopify
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 8
+#
+DOMAIN-SUFFIX,myshopify.com
+DOMAIN-SUFFIX,shop.app
+DOMAIN-SUFFIX,shopify.com
+DOMAIN-SUFFIX,shopify.dev
+DOMAIN-SUFFIX,shopifycdn.com
+DOMAIN-SUFFIX,shopifycloud.com
+DOMAIN-SUFFIX,shopifystatus.com
+DOMAIN-SUFFIX,shopifysvc.com

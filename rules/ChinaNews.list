@@ -1,0 +1,9 @@
+# NAME: ChinaNews
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,chinanews.com
+DOMAIN-SUFFIX,chinanews.com.cn
+DOMAIN-SUFFIX,cns.com.cn
+DOMAIN-SUFFIX,ecns.cn

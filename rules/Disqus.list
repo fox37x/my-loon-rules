@@ -1,0 +1,8 @@
+# NAME: Disqus
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,disqus.com
+DOMAIN-SUFFIX,disquscdn.com
+DOMAIN-SUFFIX,disqusservice.com

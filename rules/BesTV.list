@@ -1,0 +1,12 @@
+# NAME: BesTV
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN-SUFFIX,bbtv.cn
+DOMAIN-SUFFIX,bestv.com.cn
+DOMAIN-SUFFIX,bestvcdn.cn
+DOMAIN-SUFFIX,bestvcdn.com
+DOMAIN-SUFFIX,bestvcdn.com.cn
+DOMAIN-SUFFIX,bestvcdn.net
+DOMAIN-SUFFIX,smgbb.cn

@@ -1,0 +1,9 @@
+# NAME: VipShop
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,appsimg.com
+DOMAIN-SUFFIX,appvipshop.com
+DOMAIN-SUFFIX,vip.com
+DOMAIN-SUFFIX,vipstatic.com

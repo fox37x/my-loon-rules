@@ -1,0 +1,12 @@
+# NAME: 9to5
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN-SUFFIX,9to5google.com
+DOMAIN-SUFFIX,9to5mac.com
+DOMAIN-SUFFIX,9to5terminal.com
+DOMAIN-SUFFIX,9to5toys.com
+DOMAIN-SUFFIX,dronedj.com
+DOMAIN-SUFFIX,electrek.co
+DOMAIN-SUFFIX,spaceexplored.com

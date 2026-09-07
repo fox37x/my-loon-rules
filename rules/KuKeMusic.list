@@ -1,0 +1,8 @@
+# NAME: KuKeMusic
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,kuke.com
+DOMAIN-SUFFIX,kukey.com.cn
+DOMAIN-SUFFIX,naxos.cn

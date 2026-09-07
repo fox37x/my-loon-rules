@@ -1,0 +1,7 @@
+# NAME: OP
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,op.gg
+DOMAIN-SUFFIX,opgg-static.akamaized.net

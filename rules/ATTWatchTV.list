@@ -1,0 +1,11 @@
+# NAME: ATTWatchTV
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 6
+#
+DOMAIN-SUFFIX,att.tv
+DOMAIN-SUFFIX,atttvnow.com
+DOMAIN-SUFFIX,attwatchtv.com
+DOMAIN-SUFFIX,directv.com
+DOMAIN-SUFFIX,dtvce.com
+DOMAIN-SUFFIX,nettyinternet.com

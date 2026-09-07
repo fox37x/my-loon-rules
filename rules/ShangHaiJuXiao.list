@@ -1,0 +1,10 @@
+# NAME: ShangHaiJuXiao
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,bubuying.net
+DOMAIN-SUFFIX,kuaishuru.net
+DOMAIN-SUFFIX,mdvdns.com
+DOMAIN-SUFFIX,mediav.com
+DOMAIN-SUFFIX,mvad.com

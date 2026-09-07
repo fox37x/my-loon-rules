@@ -1,0 +1,9 @@
+# NAME: DigitalOcean
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,digitalocean.com
+DOMAIN-SUFFIX,digitaloceanspaces.com
+DOMAIN-SUFFIX,do.co
+DOMAIN-SUFFIX,nginxconfig.io

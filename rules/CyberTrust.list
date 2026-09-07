@@ -1,0 +1,7 @@
+# NAME: CyberTrust
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,cybertrust.co.jp
+DOMAIN-SUFFIX,cybertrust.ne.jp

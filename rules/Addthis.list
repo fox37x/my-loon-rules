@@ -1,0 +1,8 @@
+# NAME: Addthis
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,addthis.com
+DOMAIN-SUFFIX,addthiscdn.com
+DOMAIN-SUFFIX,addthisedge.com

@@ -1,0 +1,11 @@
+# NAME: HKBN
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 6
+#
+DOMAIN-SUFFIX,csifund.org
+DOMAIN-SUFFIX,hkbn.com.hk
+DOMAIN-SUFFIX,hkbn.net
+DOMAIN-SUFFIX,hkbnes.net
+DOMAIN-SUFFIX,jos.com
+DOMAIN-SUFFIX,speedtest.com.hk

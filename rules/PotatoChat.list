@@ -1,0 +1,8 @@
+# NAME: PotatoChat
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+IP-CIDR,13.251.24.0/24,no-resolve
+IP-CIDR,13.251.41.0/24,no-resolve
+IP-CIDR,17.252.156.0/23,no-resolve

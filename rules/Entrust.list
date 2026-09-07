@@ -1,0 +1,12 @@
+# NAME: Entrust
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN-SUFFIX,affirmtrust.com
+DOMAIN-SUFFIX,atos.net
+DOMAIN-SUFFIX,certificat2.com
+DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,entrustdatacard.com
+DOMAIN-SUFFIX,myatos.net
+DOMAIN-SUFFIX,trendmicro.com

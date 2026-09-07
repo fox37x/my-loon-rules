@@ -1,0 +1,13 @@
+# NAME: JOOX
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 8
+#
+DOMAIN-SUFFIX,i-joox.com
+DOMAIN-SUFFIX,joox.com
+DOMAIN-SUFFIX,sanook.com
+DOMAIN-KEYWORD,jooxweb-api
+USER-AGENT,JOOX*
+USER-AGENT,WeMusic*
+IP-CIDR,119.28.182.0/23,no-resolve
+IP-CIDR,203.205.234.0/23,no-resolve

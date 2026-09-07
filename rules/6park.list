@@ -1,0 +1,9 @@
+# NAME: 6park
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,6park.com
+DOMAIN-SUFFIX,6parkbbs.com
+DOMAIN-SUFFIX,6parknews.com
+DOMAIN-SUFFIX,cool18.com

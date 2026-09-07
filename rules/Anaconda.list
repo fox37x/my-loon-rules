@@ -1,0 +1,9 @@
+# NAME: Anaconda
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,anaconda.cloud
+DOMAIN-SUFFIX,anaconda.com
+DOMAIN-SUFFIX,anaconda.org
+DOMAIN-SUFFIX,conda.io

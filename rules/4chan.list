@@ -1,0 +1,8 @@
+# NAME: 4chan
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,4cdn.org
+DOMAIN-SUFFIX,4chan.org
+DOMAIN-SUFFIX,4channel.org

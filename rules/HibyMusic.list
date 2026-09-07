@@ -1,0 +1,8 @@
+# NAME: HibyMusic
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,hiby.cd
+DOMAIN-SUFFIX,hiby.com
+DOMAIN-SUFFIX,hibymusic.com

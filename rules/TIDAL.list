@@ -1,0 +1,11 @@
+# NAME: TIDAL
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 6
+#
+DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
+DOMAIN-SUFFIX,tidal.com
+DOMAIN-SUFFIX,tidalhifi.com
+DOMAIN-SUFFIX,wimpmusic.com
+USER-AGENT,TIDAL*
+USER-AGENT,TIDAL*dia

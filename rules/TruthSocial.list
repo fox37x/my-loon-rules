@@ -1,0 +1,7 @@
+# NAME: TruthSocial
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,trk.bonsa.net
+DOMAIN-SUFFIX,truthsocial.com

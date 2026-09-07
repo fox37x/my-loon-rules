@@ -1,0 +1,10 @@
+# NAME: Olevod
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,haiwaikan.com
+DOMAIN-SUFFIX,iole.tv
+DOMAIN-SUFFIX,olehd.com
+DOMAIN-SUFFIX,olelive.com
+DOMAIN-KEYWORD,olevod

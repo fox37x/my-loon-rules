@@ -1,0 +1,12 @@
+# NAME: Sectigo
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 7
+#
+DOMAIN-SUFFIX,enterprisessl.com
+DOMAIN-SUFFIX,hackerguardian.com
+DOMAIN-SUFFIX,instantssl.com
+DOMAIN-SUFFIX,optimumssl.com
+DOMAIN-SUFFIX,positivessl.com
+DOMAIN-SUFFIX,sectigo.com
+DOMAIN-SUFFIX,usertrust.com

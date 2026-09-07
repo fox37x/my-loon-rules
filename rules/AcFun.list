@@ -1,0 +1,10 @@
+# NAME: AcFun
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,acfun.cn
+DOMAIN-SUFFIX,acfun.com
+DOMAIN-SUFFIX,acfun.tv
+DOMAIN-SUFFIX,aixifan.com
+USER-AGENT,AcFun*

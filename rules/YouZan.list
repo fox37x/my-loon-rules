@@ -1,0 +1,8 @@
+# NAME: YouZan
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,youzan.com
+DOMAIN-SUFFIX,youzanyun.com
+DOMAIN-SUFFIX,yzcdn.cn

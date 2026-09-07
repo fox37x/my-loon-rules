@@ -1,0 +1,9 @@
+# NAME: ZhuanZhuan
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,zhuan-zhuan.cn
+DOMAIN-SUFFIX,zhuancorp.com
+DOMAIN-SUFFIX,zhuanspirit.com
+DOMAIN-SUFFIX,zhuanzhuan.com

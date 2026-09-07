@@ -1,0 +1,16 @@
+# NAME: Nike
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 11
+#
+DOMAIN-SUFFIX,nike.com
+DOMAIN-SUFFIX,nike.com.br
+DOMAIN-SUFFIX,nike.com.hk
+DOMAIN-SUFFIX,nikecdn.com
+DOMAIN-SUFFIX,nikecloud.com
+DOMAIN-SUFFIX,nikeinc.com.cn
+DOMAIN-SUFFIX,nikestore.com.au
+DOMAIN-SUFFIX,niketracking.com
+DOMAIN-SUFFIX,static-nike.com
+DOMAIN-SUFFIX,swoo.sh
+DOMAIN-SUFFIX,swoosh.com

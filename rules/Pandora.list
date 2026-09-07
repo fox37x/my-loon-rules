@@ -1,0 +1,8 @@
+# NAME: Pandora
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,p-cdn.us
+DOMAIN-SUFFIX,pandora.com
+USER-AGENT,Pandora*

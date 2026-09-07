@@ -1,0 +1,10 @@
+# NAME: XiaoYuanKeJi
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,10010mx.com
+DOMAIN-SUFFIX,5gimos.com
+DOMAIN-SUFFIX,bizport.cn
+DOMAIN-SUFFIX,mfexcel.com
+DOMAIN-SUFFIX,microfountain.com

@@ -1,0 +1,9 @@
+# NAME: Apkpure
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,apkpure.com
+DOMAIN-SUFFIX,cdnpure.com
+DOMAIN-SUFFIX,pureapk.com
+DOMAIN-SUFFIX,winudf.com

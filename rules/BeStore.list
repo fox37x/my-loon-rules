@@ -1,0 +1,8 @@
+# NAME: BeStore
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,517lppz.com
+DOMAIN-SUFFIX,lppz.com
+DOMAIN-SUFFIX,lppzimg.com

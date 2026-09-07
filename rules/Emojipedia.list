@@ -1,0 +1,8 @@
+# NAME: Emojipedia
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,emojipedia.org
+DOMAIN-SUFFIX,worldemojiawards.com
+DOMAIN-SUFFIX,worldemojiday.com

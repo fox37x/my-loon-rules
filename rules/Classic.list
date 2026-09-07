@@ -1,0 +1,9 @@
+# NAME: Classic
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN,asia.battle.net
+DOMAIN,europe.battle.net
+DOMAIN,useast.battle.net
+DOMAIN,uswest.battle.net

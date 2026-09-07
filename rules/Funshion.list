@@ -1,0 +1,15 @@
+# NAME: Funshion
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 10
+#
+DOMAIN-SUFFIX,9iwanwan.com
+DOMAIN-SUFFIX,9ixiuxiu.com
+DOMAIN-SUFFIX,fspcdn.com
+DOMAIN-SUFFIX,fun.tv
+DOMAIN-SUFFIX,funshion.com
+DOMAIN-SUFFIX,funshion.net
+DOMAIN-SUFFIX,funshion.tv
+DOMAIN-SUFFIX,ibidian.com
+DOMAIN-SUFFIX,jvcsmart.cn
+DOMAIN-SUFFIX,jvcsmart.com.cn

@@ -1,0 +1,8 @@
+# NAME: GitBook
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,gitbook.com
+DOMAIN-SUFFIX,gitbook.io
+DOMAIN-SUFFIX,gitbook.zendesk.com

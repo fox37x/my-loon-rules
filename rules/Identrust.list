@@ -1,0 +1,8 @@
+# NAME: Identrust
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,identrust.co.uk
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,identrust.net

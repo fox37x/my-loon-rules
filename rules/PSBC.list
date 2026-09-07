@@ -1,0 +1,8 @@
+# NAME: PSBC
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,95580.net
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,psbcoa.com.cn

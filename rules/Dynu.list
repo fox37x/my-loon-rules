@@ -1,0 +1,8 @@
+# NAME: Dynu
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN-SUFFIX,dynu.com
+DOMAIN-SUFFIX,dynu.net
+DOMAIN-SUFFIX,freeddns.org

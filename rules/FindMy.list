@@ -1,0 +1,8 @@
+# NAME: FindMy
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 3
+#
+DOMAIN,fmfmobile.icloud.com
+DOMAIN,fmipmobile.icloud.com
+DOMAIN,statici.icloud.com

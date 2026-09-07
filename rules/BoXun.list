@@ -1,0 +1,7 @@
+# NAME: BoXun
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 2
+#
+DOMAIN-SUFFIX,bowenpress.com
+DOMAIN-SUFFIX,boxun.com

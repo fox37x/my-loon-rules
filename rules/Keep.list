@@ -1,0 +1,10 @@
+# NAME: Keep
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,calorietech.com
+DOMAIN-SUFFIX,gotokeep.com
+DOMAIN-SUFFIX,keep.com
+DOMAIN-SUFFIX,keep.com.cn
+DOMAIN-SUFFIX,keepcdn.com

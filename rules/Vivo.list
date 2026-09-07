@@ -1,0 +1,19 @@
+# NAME: Vivo
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 14
+#
+DOMAIN-SUFFIX,bbk.com
+DOMAIN-SUFFIX,bbktel.com.cn
+DOMAIN-SUFFIX,funtouchos.com
+DOMAIN-SUFFIX,gdbbk.com
+DOMAIN-SUFFIX,iqoo.com
+DOMAIN-SUFFIX,vivo.cn
+DOMAIN-SUFFIX,vivo.com
+DOMAIN-SUFFIX,vivo.com.cn
+DOMAIN-SUFFIX,vivo.xyz
+DOMAIN-SUFFIX,vivoglobal.com
+DOMAIN-SUFFIX,vivosjpt.com
+DOMAIN-SUFFIX,vivotc.com
+DOMAIN-SUFFIX,vmic.xyz
+DOMAIN-SUFFIX,vsearch.club

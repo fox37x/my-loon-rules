@@ -1,0 +1,9 @@
+# NAME: HP
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,hp.com
+DOMAIN-SUFFIX,hpstore-china.com
+DOMAIN-SUFFIX,hpstore.com
+DOMAIN-SUFFIX,hpstore.corpmerchandise.com

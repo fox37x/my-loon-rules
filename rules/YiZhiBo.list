@@ -1,0 +1,10 @@
+# NAME: YiZhiBo
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 5
+#
+DOMAIN-SUFFIX,hifengli.com
+DOMAIN-SUFFIX,liexiulive.com
+DOMAIN-SUFFIX,sndks.com
+DOMAIN-SUFFIX,yizhibo.com
+DOMAIN-SUFFIX,yzbo.tv

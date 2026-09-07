@@ -1,0 +1,9 @@
+# NAME: HuYa
+# SOURCE: Blackmatrix7 ios_rule_script
+# FORMAT: Loon merged rule
+# TOTAL: 4
+#
+DOMAIN-SUFFIX,huya.com
+DOMAIN-SUFFIX,huyagame.cn
+DOMAIN-SUFFIX,peiwanlu.com
+DOMAIN-SUFFIX,snapplay.com
