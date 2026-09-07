@@ -1,116 +1,81 @@
-import json
 import os
 import re
-import urllib.request
-from urllib.error import HTTPError, URLError
+import shutil
+import subprocess
+from pathlib import Path
 
 
-REPO = "blackmatrix7/ios_rule_script"
+REPO_URL = "https://github.com/blackmatrix7/ios_rule_script.git"
 BRANCH = "master"
-LOON_ROOT = "rule/Loon"
-OUTPUT_DIR = "rules"
 
-API_URL = (
-    f"https://api.github.com/repos/{REPO}/contents/"
-    f"{LOON_ROOT}?ref={BRANCH}"
-)
+SOURCE_DIR = Path("_blackmatrix7")
+LOON_DIR = SOURCE_DIR / "rule" / "Loon"
+OUTPUT_DIR = Path("rules")
 
 
-def github_request(url: str):
-    request = urllib.request.Request(
-        url,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "my-loon-rules",
-        },
+def run_command(command: list[str]) -> None:
+    print("执行:", " ".join(command))
+
+    result = subprocess.run(
+        command,
+        check=False,
+        text=True,
     )
 
-    token = os.environ.get("GITHUB_TOKEN")
-
-    if token:
-        request.add_header(
-            "Authorization",
-            f"Bearer {token}",
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"命令执行失败，退出代码: {result.returncode}"
         )
 
-    try:
-        with urllib.request.urlopen(
-            request,
-            timeout=30,
-        ) as response:
 
-            if response.getcode() != 200:
-                raise RuntimeError(
-                    f"HTTP {response.getcode()}: {url}"
-                )
+def clone_blackmatrix7() -> None:
+    if SOURCE_DIR.exists():
+        shutil.rmtree(SOURCE_DIR)
 
-            return json.loads(
-                response.read().decode("utf-8")
-            )
+    print("正在拉取 Blackmatrix7 最新仓库...")
 
-    except HTTPError as exc:
+    run_command([
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--filter=blob:none",
+        "--sparse",
+        "--branch",
+        BRANCH,
+        REPO_URL,
+        str(SOURCE_DIR),
+    ])
+
+    print("正在获取 rule/Loon ...")
+
+    run_command([
+        "git",
+        "-C",
+        str(SOURCE_DIR),
+        "sparse-checkout",
+        "set",
+        "rule/Loon",
+    ])
+
+    if not LOON_DIR.exists():
         raise RuntimeError(
-            f"GitHub API 请求失败: HTTP {exc.code}\n{url}"
-        ) from exc
-
-    except URLError as exc:
-        raise RuntimeError(
-            f"网络请求失败: {exc.reason}\n{url}"
-        ) from exc
-
-
-def download_file(url: str) -> list[str]:
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "my-loon-rules",
-        },
-    )
-
-    try:
-        with urllib.request.urlopen(
-            request,
-            timeout=30,
-        ) as response:
-
-            if response.getcode() != 200:
-                raise RuntimeError(
-                    f"HTTP {response.getcode()}: {url}"
-                )
-
-            content = response.read().decode(
-                "utf-8",
-                errors="replace",
-            )
-
-    except HTTPError as exc:
-        raise RuntimeError(
-            f"规则下载失败: HTTP {exc.code}\n{url}"
-        ) from exc
-
-    except URLError as exc:
-        raise RuntimeError(
-            f"规则下载失败: {exc.reason}\n{url}"
-        ) from exc
-
-    if not content.strip():
-        raise RuntimeError(
-            f"规则文件为空:\n{url}"
+            "找不到 Blackmatrix7 的 rule/Loon 目录"
         )
 
-    return content.splitlines()
 
-
-def normalize_rule(line: str) -> str | None:
+def normalize_domain_rule(line: str) -> str | None:
     """
-    Blackmatrix7 Loon 的 *_Domain.list 中，
-    域名通常使用：
+    Blackmatrix7 的 *_Domain.list 中，
+    常见格式：
 
         .example.com
 
-    这里转换成标准 Loon：
+    转换为：
 
         DOMAIN-SUFFIX,example.com
+
+    其他规则原样保留。
     """
 
     line = line.strip()
@@ -138,15 +103,53 @@ def normalize_rule(line: str) -> str | None:
     return line
 
 
-def clean_rules(lines: list[str]) -> list[str]:
+def read_rules(path: Path) -> list[str]:
+    if not path.exists():
+        raise RuntimeError(
+            f"规则文件不存在: {path}"
+        )
+
+    if not path.is_file():
+        raise RuntimeError(
+            f"规则路径不是文件: {path}"
+        )
+
+    text = path.read_text(
+        encoding="utf-8",
+        errors="replace",
+    )
+
+    if not text.strip():
+        raise RuntimeError(
+            f"规则文件为空: {path}"
+        )
+
+    return text.splitlines()
+
+
+def clean_rules(
+    lines: list[str],
+    convert_domain: bool = False,
+) -> list[str]:
     result = []
     seen = set()
 
     for raw_line in lines:
-        line = normalize_rule(raw_line)
+        line = raw_line.strip()
 
-        if line is None:
+        if not line:
             continue
+
+        if line.startswith("#"):
+            continue
+
+        if convert_domain:
+            normalized = normalize_domain_rule(line)
+
+            if normalized is None:
+                continue
+
+            line = normalized
 
         if line in seen:
             continue
@@ -157,102 +160,123 @@ def clean_rules(lines: list[str]) -> list[str]:
     return result
 
 
-def find_file(entries: list[dict], filename: str):
-    for entry in entries:
-        if (
-            entry.get("type") == "file"
-            and entry.get("name") == filename
-        ):
-            return entry
+def find_main_rule(service_dir: Path) -> Path | None:
+    """
+    优先：
+        XXX.list
+        XXX.lsr
+    """
+
+    service_name = service_dir.name
+
+    for extension in [".list", ".lsr"]:
+        path = service_dir / f"{service_name}{extension}"
+
+        if path.is_file():
+            return path
 
     return None
 
 
-def process_service(service_name: str, entries: list[dict]) -> str | None:
+def find_domain_rule(service_dir: Path) -> Path | None:
     """
-    一个服务最终只生成一个 rules/XXX.list。
-
-    支持：
-
-        XXX.list
-        XXX.lsr
-
-    如果存在：
-
+    优先：
         XXX_Domain.list
         XXX_Domain.lsr
-
-    自动合并。
-
-    XXX_Resolve.list / XXX_Resolve.lsr
-    不参与合并。
     """
 
-    main_entry = (
-        find_file(entries, f"{service_name}.list")
-        or find_file(entries, f"{service_name}.lsr")
-    )
+    service_name = service_dir.name
 
-    if main_entry is None:
+    for extension in [".list", ".lsr"]:
+        path = service_dir / f"{service_name}_Domain{extension}"
+
+        if path.is_file():
+            return path
+
+    return None
+
+
+def process_service(service_dir: Path) -> str | None:
+    service_name = service_dir.name
+
+    main_file = find_main_rule(service_dir)
+
+    # 没有主规则文件，例如纯 README 目录
+    if main_file is None:
         print(
             f"[跳过] {service_name}: "
             f"没有找到主规则文件"
         )
         return None
 
-    main_lines = download_file(
-        main_entry["download_url"]
-    )
+    print()
+    print("=" * 60)
+    print(f"[处理] {service_name}")
 
-    domain_entry = (
-        find_file(
-            entries,
-            f"{service_name}_Domain.list",
-        )
-        or find_file(
-            entries,
-            f"{service_name}_Domain.lsr",
-        )
-    )
+    main_lines = read_rules(main_file)
+
+    domain_file = find_domain_rule(service_dir)
 
     domain_lines = []
 
-    if domain_entry is not None:
+    if domain_file is not None:
         print(
-            f"[合并] {service_name} + "
-            f"{domain_entry['name']}"
+            f"[合并] {main_file.name} + "
+            f"{domain_file.name}"
         )
 
-        domain_lines = download_file(
-            domain_entry["download_url"]
-        )
+        domain_lines = read_rules(domain_file)
 
     else:
         print(
-            f"[单文件] {service_name}"
+            f"[单文件] {main_file.name}"
         )
 
-    merged = clean_rules(
-        domain_lines + main_lines
+    # Domain 规则放前面
+    merged = []
+
+    if domain_lines:
+        merged.extend(
+            clean_rules(
+                domain_lines,
+                convert_domain=True,
+            )
+        )
+
+    merged.extend(
+        clean_rules(
+            main_lines,
+            convert_domain=False,
+        )
     )
 
-    if not merged:
+    # 再次统一去重
+    final_rules = []
+    seen = set()
+
+    for rule in merged:
+        if rule in seen:
+            continue
+
+        seen.add(rule)
+        final_rules.append(rule)
+
+    if not final_rules:
         raise RuntimeError(
             f"{service_name}: 合并结果为空"
         )
 
-    os.makedirs(
-        OUTPUT_DIR,
+    OUTPUT_DIR.mkdir(
+        parents=True,
         exist_ok=True,
     )
 
-    output_path = os.path.join(
-        OUTPUT_DIR,
-        f"{service_name}.list",
+    output_file = (
+        OUTPUT_DIR
+        / f"{service_name}.list"
     )
 
-    with open(
-        output_path,
+    with output_file.open(
         "w",
         encoding="utf-8",
         newline="\n",
@@ -261,99 +285,81 @@ def process_service(service_name: str, entries: list[dict]) -> str | None:
         file.write(
             f"# NAME: {service_name}\n"
         )
+
         file.write(
             "# SOURCE: "
             "Blackmatrix7 ios_rule_script\n"
         )
+
         file.write(
             "# FORMAT: Loon merged rule\n"
         )
+
         file.write(
-            f"# TOTAL: {len(merged)}\n"
+            f"# TOTAL: {len(final_rules)}\n"
         )
+
         file.write("#\n")
 
-        for rule in merged:
+        for rule in final_rules:
             file.write(rule + "\n")
 
     print(
-        f"[完成] {service_name}.list "
-        f"共 {len(merged)} 条"
+        f"[完成] {output_file} "
+        f"共 {len(final_rules)} 条"
     )
 
-    return f"{service_name}.list"
+    return output_file.name
 
 
-def main():
-    print(
-        "正在读取 Blackmatrix7 Loon 规则目录..."
-    )
+def remove_old_rules(generated_files: set[str]) -> None:
+    if not OUTPUT_DIR.exists():
+        return
 
-    root_entries = github_request(
-        API_URL
-    )
+    for path in OUTPUT_DIR.glob("*.list"):
+        if path.name not in generated_files:
+            print(
+                f"[删除] 上游已经不存在: "
+                f"{path.name}"
+            )
+            path.unlink()
+
+
+def main() -> None:
+    print("=" * 60)
+    print("Blackmatrix7 Loon 全量同步")
+    print("=" * 60)
+
+    clone_blackmatrix7()
 
     service_dirs = [
-        entry
-        for entry in root_entries
-        if entry.get("type") == "dir"
+        path
+        for path in LOON_DIR.iterdir()
+        if path.is_dir()
     ]
+
+    service_dirs.sort(
+        key=lambda path: path.name.lower()
+    )
 
     if not service_dirs:
         raise RuntimeError(
-            "没有找到 Blackmatrix7 Loon 规则目录"
+            "rule/Loon 下没有找到任何规则目录"
         )
-
-    os.makedirs(
-        OUTPUT_DIR,
-        exist_ok=True,
-    )
 
     generated_files = set()
 
-    for service_entry in sorted(
-        service_dirs,
-        key=lambda x: x["name"].lower(),
-    ):
-
-        service_name = service_entry["name"]
-
-        entries = github_request(
-            service_entry["url"]
-        )
-
+    for service_dir in service_dirs:
         result = process_service(
-            service_name,
-            entries,
+            service_dir
         )
 
         if result:
             generated_files.add(result)
 
-    # 删除已经从 Blackmatrix7 移除的规则
-    existing_files = [
-        filename
-        for filename in os.listdir(
-            OUTPUT_DIR
-        )
-        if filename.endswith(".list")
-    ]
-
-    for filename in existing_files:
-
-        if filename not in generated_files:
-
-            path = os.path.join(
-                OUTPUT_DIR,
-                filename,
-            )
-
-            os.remove(path)
-
-            print(
-                f"[删除] 上游已经移除: "
-                f"{filename}"
-            )
+    remove_old_rules(
+        generated_files
+    )
 
     print()
     print("=" * 60)
