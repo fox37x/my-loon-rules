@@ -1,7 +1,7 @@
 # NAME: Global
 # SOURCE: Blackmatrix7 ios_rule_script
 # FORMAT: Loon merged rule
-# TOTAL: 35089
+# TOTAL: 35090
 #
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,01.org
@@ -24957,6 +24957,7 @@ DOMAIN-SUFFIX,qtweeter.com
 DOMAIN-SUFFIX,quadram.ac.uk
 DOMAIN-SUFFIX,quadraminstitute.ac.uk
 DOMAIN-SUFFIX,quadrat.ac.uk
+DOMAIN-SUFFIX,quakemachinex.com
 DOMAIN-SUFFIX,qualcomm-email.com
 DOMAIN-SUFFIX,qualcomm-inc.com
 DOMAIN-SUFFIX,qualcomm.co.id
