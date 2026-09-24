@@ -1,7 +1,7 @@
 # NAME: Global
 # SOURCE: Blackmatrix7 ios_rule_script
 # FORMAT: Loon merged rule
-# TOTAL: 35098
+# TOTAL: 35100
 #
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,01.org
@@ -6748,6 +6748,7 @@ DOMAIN-SUFFIX,chinesegay.org
 DOMAIN-SUFFIX,chinesen.de
 DOMAIN-SUFFIX,chinesenews.net.au
 DOMAIN-SUFFIX,chinesepen.org
+DOMAIN-SUFFIX,chineseposters.net
 DOMAIN-SUFFIX,chineseradioseattle.com
 DOMAIN-SUFFIX,chinesespanking.com
 DOMAIN-SUFFIX,chinesetalks.net
@@ -22061,6 +22062,7 @@ DOMAIN-SUFFIX,northumbria.ac.uk
 DOMAIN-SUFFIX,norton.com
 DOMAIN-SUFFIX,norwichresearchpark.ac.uk
 DOMAIN-SUFFIX,nos.nl
+DOMAIN-SUFFIX,note.com
 DOMAIN-SUFFIX,notegpt.io
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,noticias-rt.com
