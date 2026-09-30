@@ -64,43 +64,40 @@ def clone_blackmatrix7() -> None:
         )
 
 
+DOMAIN_PATTERN = re.compile(r"[A-Za-z0-9_.-]+")
+
+
 def normalize_domain_rule(line: str) -> str | None:
     """
-    Blackmatrix7 的 *_Domain.list 中，
-    常见格式：
+    Blackmatrix7 的 *_Domain.list 中有两种格式：
 
-        .example.com
+        .example.com   包含所有子域名 → DOMAIN-SUFFIX,example.com
+        example.com    只匹配域名本身 → DOMAIN,example.com
 
-    转换为：
-
-        DOMAIN-SUFFIX,example.com
-
-    其他规则原样保留。
+    已经带规则类型的行原样保留。
     """
 
     line = line.strip()
 
-    if not line:
+    if not line or line.startswith("#"):
         return None
 
-    if line.startswith("#"):
-        return None
+    # 已经是 Loon 规则格式
+    if "," in line:
+        return line
 
-    # Domain 文件里的简写域名
-    if (
-        line.startswith(".")
-        and "," not in line
-        and " " not in line
-    ):
-        domain = line[1:].strip()
+    if line.startswith("."):
+        domain = line[1:]
+        rule_type = "DOMAIN-SUFFIX"
+    else:
+        domain = line
+        rule_type = "DOMAIN"
 
-        if re.fullmatch(
-            r"[A-Za-z0-9*_.-]+",
-            domain,
-        ):
-            return f"DOMAIN-SUFFIX,{domain}"
+    if DOMAIN_PATTERN.fullmatch(domain):
+        return f"{rule_type},{domain}"
 
-    return line
+    print(f"[警告] 无法识别，已丢弃: {line}")
+    return None
 
 
 def read_rules(path: Path) -> list[str]:
@@ -350,9 +347,20 @@ def main() -> None:
     generated_files = set()
 
     for service_dir in service_dirs:
-        result = process_service(
-            service_dir
-        )
+        try:
+            result = process_service(
+                service_dir
+            )
+        except RuntimeError as error:
+            # 单个规则出错时保留旧文件，不影响其他规则更新
+            print(
+                f"[出错] {service_dir.name}: {error}，"
+                f"保留旧文件"
+            )
+            generated_files.add(
+                f"{service_dir.name}.list"
+            )
+            continue
 
         if result:
             generated_files.add(result)
