@@ -1,7 +1,7 @@
 # NAME: ProxyLite
 # SOURCE: Blackmatrix7 ios_rule_script
 # FORMAT: Loon merged rule
-# TOTAL: 991
+# TOTAL: 993
 #
 DOMAIN,addons.mozilla.org
 DOMAIN,amp-api.podcasts.apple.com
@@ -801,6 +801,7 @@ DOMAIN-SUFFIX,westpoint.edu
 DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,wikibooks.org
 DOMAIN-SUFFIX,wikidata.org
+DOMAIN-SUFFIX,wikifunctions.org
 DOMAIN-SUFFIX,wikileaks-forum.com
 DOMAIN-SUFFIX,wikileaks.info
 DOMAIN-SUFFIX,wikileaks.org
@@ -812,6 +813,7 @@ DOMAIN-SUFFIX,wikipedia.com
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikiquote.org
 DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wikispecies.org
 DOMAIN-SUFFIX,wikiversity.org
 DOMAIN-SUFFIX,wikivoyage.org
 DOMAIN-SUFFIX,wikiwand.com
