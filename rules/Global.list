@@ -1,7 +1,7 @@
 # NAME: Global
 # SOURCE: Blackmatrix7 ios_rule_script
 # FORMAT: Loon merged rule
-# TOTAL: 35228
+# TOTAL: 35229
 #
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,01.org
@@ -652,6 +652,7 @@ DOMAIN-SUFFIX,91se.fun
 DOMAIN-SUFFIX,91sesex.xyz
 DOMAIN-SUFFIX,91sew.xyz
 DOMAIN-SUFFIX,91sew40.buzz
+DOMAIN-SUFFIX,91short.com
 DOMAIN-SUFFIX,91vhome.com
 DOMAIN-SUFFIX,91vps.club
 DOMAIN-SUFFIX,920share.com
